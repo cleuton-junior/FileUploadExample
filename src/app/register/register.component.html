@@ -1,0 +1,34 @@
+<h2 style="margin-left: 15px;">Registration form</h2>
+   
+<form [formGroup]="form" #AdminInformation (ngSubmit)="AdminForm(AdminInformation)">  
+  
+  <div class="mb-3">  
+    <div class="col-md-3 col-md-offset-4">  
+        <label for="fullName"> Name </label>  
+        <input formControlName="fullName" class="form-control" type="text">   
+    </div>  
+  </div>  
+  
+  <div class="mb-3">  
+    <div class="col-md-3">  
+        <label for="email"> Email </label>  
+        <input formControlName="email" class="form-control" type="text">   
+    </div>  
+  </div>  
+  
+    
+  <div class="mb-3">  
+    <div class="col-md-4">  
+          
+      <label for="formFile">Upload Image</label>  
+        <input formControlName="profileImage" class="form-control" type="file" (change)="selectFile($event)">   
+    </div>  
+  </div>  
+  
+  <div class="mb-3" style="margin-top: 20px;">  
+    <div class="col-md-offset-1 col-md-4">  
+        <button class="btn btn-md btn-primary btn-style">Save</button>  
+    </div>  
+  </div>  
+  
+</form> 

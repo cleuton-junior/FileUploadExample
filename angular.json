@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FileUploadExample"
+    }
+  },
+  "defaultProject": "FileUploadExample",
+  "cli": {
+    "analytics": "abb229ec-be8d-4c37-b506-e71971c1111b"
+  }
 }
